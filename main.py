@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException
-from app.models import EmailRequest, EmailResponse
-from app.logic import enhance_email
+from models import EmailRequest, EmailResponse
+from logic import enhance_email
 from fastapi.middleware.cors import CORSMiddleware 
 
 app = FastAPI()
