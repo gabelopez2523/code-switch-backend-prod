@@ -2,18 +2,23 @@ from fastapi import FastAPI, HTTPException
 from models import EmailRequest, EmailResponse
 from logic import enhance_email
 from fastapi.middleware.cors import CORSMiddleware 
+from flask_cors import CORS
 
 app = FastAPI()
 
-
+origins = ['https://code-switch-ui-git-main-gabe-lopezs-projects.vercel.app/', 
+           'https://code-switch-96e4t5pb0-gabe-lopezs-projects.vercel.app/']
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://code-switch-96e4t5pb0-gabe-lopezs-projects.vercel.app"],  # Or set ["*"]
+    allow_origins= origins,  # Or set ["*"]
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+'https://code-switch-ui-git-main-gabe-lopezs-projects.vercel.app/'
+'https://code-switch-96e4t5pb0-gabe-lopezs-projects.vercel.app/'
+
 
 @app.post("/code_switch", response_model=EmailResponse)
 async def enhance_email_endpoint(request: EmailRequest):
