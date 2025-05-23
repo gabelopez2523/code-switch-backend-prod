@@ -5,8 +5,9 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-origins = ['https://code-switch-ui-git-main-gabe-lopezs-projects.vercel.app/', 
-           'https://code-switch-96e4t5pb0-gabe-lopezs-projects.vercel.app/']
+origins = ['https://code-switch-ui-git-main-gabe-lopezs-projects.vercel.app', 
+           'https://code-switch-96e4t5pb0-gabe-lopezs-projects.vercel.app',
+           'https://code-switch-ui.vercel.app']
 
 app.add_middleware(
     CORSMiddleware,
@@ -15,8 +16,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-'https://code-switch-ui-git-main-gabe-lopezs-projects.vercel.app/'
-'https://code-switch-96e4t5pb0-gabe-lopezs-projects.vercel.app/'
+
 
 
 @app.post("/code_switch", response_model=EmailResponse)
