@@ -2,7 +2,6 @@ from fastapi import FastAPI, HTTPException
 from models import EmailRequest, EmailResponse
 from logic import enhance_email
 from fastapi.middleware.cors import CORSMiddleware 
-from flask_cors import CORS
 
 app = FastAPI()
 
