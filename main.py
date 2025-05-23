@@ -7,7 +7,8 @@ app = FastAPI()
 
 origins = ['https://code-switch-ui-git-main-gabe-lopezs-projects.vercel.app', 
            'https://code-switch-96e4t5pb0-gabe-lopezs-projects.vercel.app',
-           'https://code-switch-ui.vercel.app']
+           'https://code-switch-ui.vercel.app',
+           'http://localhost:5173']
 
 app.add_middleware(
     CORSMiddleware,
