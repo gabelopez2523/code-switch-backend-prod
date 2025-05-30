@@ -5,14 +5,13 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-origins = ['https://code-switch-ui-git-main-gabe-lopezs-projects.vercel.app', 
-           'https://code-switch-96e4t5pb0-gabe-lopezs-projects.vercel.app',
-           'https://code-switch-ui.vercel.app',
-           'http://localhost:5173']
+origins = [
+           'http://localhost:5173'
+           ]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins= origins,  # Or set ["*"]
+    allow_origins= ["*"], #origins,  # Or set ["*"]
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -29,6 +28,7 @@ async def enhance_email_endpoint(request: EmailRequest):
         enhanced_email = await enhance_email(
             user_input=request.user_input,
             scenario=request.scenario,
+            scenario_context=request.scenario_context,
             tone=request.tone,
             language=request.language
         )
