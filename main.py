@@ -12,7 +12,7 @@ origins = [
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins= origins,  # Or set ["*"]
+    allow_origins= ['*'],  # Or set ["*"]
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -28,7 +28,7 @@ async def enhance_email_endpoint(request: EmailRequest):
     try:
         enhanced_email = await enhance_email(
             user_input=request.user_input,
-            scenario=request.scenario,
+            #scenario=request.scenario,
             scenario_context=request.scenario_context,
             tone=request.tone,
             language=request.language
