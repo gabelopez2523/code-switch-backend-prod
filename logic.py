@@ -24,7 +24,7 @@ DO NOT return any additional text or explanations outside of the email content i
     # Generate the response using OpenAI's chat completion API
 
     response = openai.chat.completions.create(
-        model="gpt-4o",
+        model="gpt-4.1-mini",
         messages=messages,
         temperature=1.0
     )
