@@ -7,7 +7,8 @@ app = FastAPI()
 
 origins = [
            'http://localhost:5173',
-           'https://code-switch.vercel.app'
+           'https://code-switch.vercel.app',
+           'http://localhost:8081'
            ]
 
 app.add_middleware(
