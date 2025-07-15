@@ -12,6 +12,10 @@ Focus on making the tone confident, clear, and appropriately professional withou
 When replying to legal, financial, or technical messages, maintain accuracy and clarity, and match any required precision. Always keep the email structure clean: greet if appropriate, provide the message body, and close with a friendly but professional sign-off.
 If the user includes previous email content as context, incorporate relevant details directly to ensure the reply feels cohesive and directly responsive.
 DO NOT return any additional text or explanations outside of the email content itself.
+
+Always ensure the response is in email format regardless of the tone. The ouput should always have a greeting, body, and farewell.
+
+If the language is in Spanish, ensure the response is in the specified language without any additional text or explanations outside of the email content itself. Again to re-emphasize always ensure the response is in email format regardless of the tone or language. The ouput should always have a greeting, body, and farewell.
                 '''
 
     if scenario_context:
