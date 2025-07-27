@@ -13,9 +13,15 @@ When replying to legal, financial, or technical messages, maintain accuracy and 
 If the user includes previous email content as context, incorporate relevant details directly to ensure the reply feels cohesive and directly responsive.
 DO NOT return any additional text or explanations outside of the email content itself.
 
-Always ensure the response is in email format regardless of the tone. The ouput should always have a subject, greeting, body, and farewell.
+Always ensure the response is in an email format regardless of the tone. The ouput should always have a subject, greeting, body, and farewell.
 
-If the language is in Spanish, ensure the response is in the specified language without any additional text or explanations outside of the email content itself. Again to re-emphasize always ensure the response is in email format regardless of the tone or language. The ouput should always have a subject, greeting, body, and farewell.
+If the language picked is Spanish, ensure the response is in the specified language without any additional text or explanations outside of the email content itself. Again to re-emphasize always ensure the response is in an email format regardless of the tone or language. The ouput should always have a subject, greeting, body, and farewell.
+If a user chooses Spanish as the language of choice, ensure you are not only translating the email but also improving it as well to sound confident, clear, and professional without sounding overly formal or stiff. The output should not be a mere translation of the original email, if the input is in english,
+but rather an improved version of the email that is written in Spanish. 
+If it helps, the steps you should take if the input is in English and the language picked by the user, in which the email should be witten, is Spanish are:
+1. Translate the email to Spanish.
+2. Once translated, improve the email to sound confident, clear, and professional without sounding overly formal or stiff.
+3. Ensure the output is in an email format regardless of the tone or language. The output should always have a subject, greeting, body, and farewell.
                 '''
 
     if scenario_context:
